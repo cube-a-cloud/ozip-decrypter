@@ -43,7 +43,7 @@ jobs:
              sudo python ozipdecrypt.py $FIRMWARE_NAME
              zip -r $https://download.c.realme.com/osupdate/RMX1851EX_11_OTA_1180_all_w236tl6xfsaL.zip ./out/*
 
-       - name: Upload Decrypted Zip
+       - name: Upload Decrypted ZipRMX1851EX_11_OTA_1100_all_afysQxXkAd0p.ozip 
          run: |
               expect -c " 
               spawn sftp ${{ secrets.SFUSER }}@frs.sourceforge.net
